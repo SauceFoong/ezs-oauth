@@ -11,13 +11,20 @@
 
 ## How to run
 
-### Step 1: Clone this project
+### Step 1: Set up and installation
 
 ```
-git clone this project
+git clone https://github.com/SauceFoong/ezs-oauth.git
 ```
 
-### Step 2: Insert Environment Variables into .env file in root directory
+### Step 2: Install dependencies
+
+```
+composer install
+npm install
+```
+
+### Step 3: Insert Environment Variables into .env file in root directory
 
 Let me know if you need the values or you may create your own
 
@@ -48,13 +55,13 @@ GITHUB_CLIENT_SECRET=
 
 ```
 
-### Step 3: DB Migratation
+### Step 4: DB Migratation
 
 ```
 php artisan migrate
 ```
 
-### Step 4: Run with Docker
+### Step 5: Run with Docker
 
 Open your Docker Desktop and type this command in terminal/ cmd
 
