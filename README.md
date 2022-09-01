@@ -11,34 +11,20 @@
 
 ## How to run
 
+### Step 1: Clone this project
+
 ```
 git clone this project
 ```
 
-### Run with Docker
-
-Open your Docker Desktop
-
-```
-./vendor/bin/sail up
-```
-
-Open another tab in the terminal/cmd
-
-```
-./vendor/bin/sail npm install && npm run dev
-```
-
-Then access http://127.0.0.1/ with browser
-
-## Environment Variables
+### Step 2: Insert Environment Variables into .env file in root directory
 
 Let me know if you need the values or you may create your own
 
 ```
 APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=base64:VzJAUbrWMNqWA6oXEYNo6vr3lKrihvdPAe5kNh4+s5Q=
+APP_KEY=
 APP_DEBUG=true
 APP_URL=http://localhost
 
@@ -62,6 +48,28 @@ GITHUB_CLIENT_SECRET=
 
 ```
 
+### Step 3: DB Migratation
+
+```
+php artisan migrate
+```
+
+### Step 4: Run with Docker
+
+Open your Docker Desktop and type this command in terminal/ cmd
+
+```
+./vendor/bin/sail up
+```
+
+Open another tab in the terminal/cmd to run the frontend app
+
+```
+./vendor/bin/sail npm install && npm run dev
+```
+
+Then access http://127.0.0.1/ with browser
+
 ## Demo
 
-Please watch the demo with demo.mov
+You can watch the demo with video file "demo.mov" in root directory
