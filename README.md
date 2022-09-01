@@ -19,14 +19,17 @@ git clone https://github.com/SauceFoong/ezs-oauth.git
 
 ### Step 2: Install dependencies
 
+Go to directory of the app in terminal/cmd type commands:
+
 ```
 composer install
 npm install
 ```
 
-### Step 3: Insert Environment Variables into .env file in root directory
+### Step 3: Insert Environment Variables
 
-Let me know if you need the values or you may create your own
+Create an .env file in root directory and insert the values below:
+(Let me know if you need the values or you may create your own)
 
 ```
 APP_NAME=Laravel
